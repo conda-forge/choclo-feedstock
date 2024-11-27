@@ -1,13 +1,13 @@
 {% set name = "choclo" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/choclo-{{ version }}.tar.gz
-  sha256: 3dd2dad1cf9277fe1f55f643aa53b9fad23d6012df4539269b7d8a9b2bc5ebc2
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/choclo-{{ version }}.tar.gz
+  sha256: 44869d72c260ac4cf058e325af29672bf295822b4514856dfeb59cb9a66d5982
 
 build:
   noarch: python
