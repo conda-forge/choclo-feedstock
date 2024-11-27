@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=61
     - setuptools_scm >=8.0.3
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.19
     - numba >=0.52
 
@@ -31,6 +31,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
