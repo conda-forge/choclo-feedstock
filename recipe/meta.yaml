@@ -1,5 +1,5 @@
 {% set name = "choclo" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/choclo-{{ version }}.tar.gz
-  sha256: 44869d72c260ac4cf058e325af29672bf295822b4514856dfeb59cb9a66d5982
+  sha256: 043decfb7cf79d2c8c617b718433ed5713905d7e3d6d00f4d9f1022fc3fe1fdd
 
 build:
   noarch: python
