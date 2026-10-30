@@ -1,6 +1,6 @@
 {% set name = "choclo" %}
 {% set version = "0.4.0" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -23,8 +23,8 @@ requirements:
     - setuptools_scm >=8.0.3
   run:
     - python >={{ python_min }}
-    - numpy >=1.19
-    - numba >=0.52
+    - numpy >=1.26
+    - numba >=0.59
 
 test:
   imports:
