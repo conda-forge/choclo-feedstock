@@ -1,14 +1,14 @@
 {% set name = "choclo" %}
-{% set version = "0.3.2" %}
-{% set python_min = "3.8" %}
+{% set version = "0.4.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/choclo-{{ version }}.tar.gz
-  sha256: 043decfb7cf79d2c8c617b718433ed5713905d7e3d6d00f4d9f1022fc3fe1fdd
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/choclo-{{ version }}.tar.gz
+  sha256: 83ed653790fa942e88fb8522147df0e6bde3ee5d3eeb01e35ba9be44f254bd79
 
 build:
   noarch: python
@@ -23,8 +23,8 @@ requirements:
     - setuptools_scm >=8.0.3
   run:
     - python >={{ python_min }}
-    - numpy >=1.19
-    - numba >=0.52
+    - numpy >=1.26
+    - numba >=0.59
 
 test:
   imports:
